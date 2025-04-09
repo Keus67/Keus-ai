@@ -1,5 +1,5 @@
 import streamlit as st
-from modules import analyse, prediction, commerce, compareteur, actualites, calendrier, securite, historique, tendances
+from modules import analyse, calendrier, historique, prediction, commerce, comparateur, actualites, securite, tendances
 from modules.auth import authentifier_utilisateur
 
 st.set_page_config(page_title="Keus Assist – IA Crypto Pro", layout="wide")
@@ -25,7 +25,7 @@ elif menu == "Prédictions":
 elif menu == "Commerce":
     commerce.afficher()
 elif menu == "Comparateur":
-    compareteur.afficher()
+    comparateur.afficher()
 elif menu == "Actualités":
     actualites.afficher()
 elif menu == "Calendrier":
