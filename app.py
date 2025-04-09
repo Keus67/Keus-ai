@@ -1,6 +1,10 @@
+st.set_page_config(page_title="Keus Assist – IA Crypto Pro", layout="wide")
+
 import streamlit as st
 from modules import analyse, calendrier, historique, prediction, commerce, comparateur, actualites, securite, tendances
 from modules.auth import authentifier_utilisateur
+with open("Style.css") as f:
+    st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
 
 st.set_page_config(page_title="Keus Assist – IA Crypto Pro", layout="wide")
 
