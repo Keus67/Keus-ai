@@ -10,7 +10,7 @@ if not authentifier_utilisateur():
 
 # Menu principal
 menu = st.sidebar.selectbox("📂 Menu", [
-    "Accueil", "Analyse Crypto", "Prédictions", "Commerce", "Comparateur",
+    "Accueil", "Analyse Crypto", "Prédiction", "Commerce", "Comparateur",
     "Actualités", "Calendrier", "Sécurité", "Historique", "Tendances"
 ])
 
