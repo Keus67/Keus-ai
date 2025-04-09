@@ -1,0 +1,72 @@
+🚀 GUIDE DE LANCEMENT – KEUS ASSIST, IA DE CRYPTO
+
+✅ 1. Lancer l’application :
+   Ouvre un terminal dans le dossier du projet et tape :
+
+   streamlit run app.py
+
+
+🔐 2. Ajouter un utilisateur avec mot de passe :
+   Va dans le fichier : modules/auth.py
+
+   Trouve ce bloc :
+   users = {
+       "keus": "crypto2025",
+       "loic": "bitcoin"
+   }
+
+   ➕ Pour ajouter un utilisateur :
+       Ajoute une ligne comme ceci :
+       "nouveau_nom": "nouveau_motdepasse",
+
+   ❌ Pour supprimer un utilisateur :
+       Supprime simplement sa ligne dans le dictionnaire.
+
+   ✏️ Exemple de modification :
+   users = {
+       "keus": "crypto2025",
+       "alice": "eth123",
+       "bob": "btc999"
+   }
+
+
+🎨 3. Modifier l’apparence / couleurs :
+   Le fichier `style.css` contrôle le design (couleurs, fond, textes).
+   ➤ Tu peux modifier la couleur d’arrière-plan, les boutons, etc.
+
+   Exemple :
+   body {
+       background-color: #0d1117;  ← change ici la couleur du fond global
+   }
+
+
+🤖 4. Modifier la personnalité ou le ton de l’IA :
+   Va dans : utils/ai.py
+
+   ➤ Modifie les messages retournés dans :
+     - prediction_ia()
+     - analyse_ia_crypto()
+
+   Tu peux les rendre :
+     - plus drôles
+     - plus agressifs
+     - plus experts
+     - plus pédagogiques
+
+
+📁 Structure du projet :
+   - app.py : point de départ
+   - modules/ : chaque section du site (analyse, actu, etc.)
+   - utils/ : outils IA, prix, API
+   - style.css : design personnalisé
+   - guide.txt : ce guide
+
+
+✅ Tout est maintenant prêt ! Lance ton assistant IA crypto personnalisé.
+
+Si tu vois une page blanche ➤ vérifie :
+   - Que tous les dossiers sont présents (`modules`, `utils`)
+   - Que tu as bien lancé avec `streamlit run app.py`
+   - Que les indentations sont correctes (pas d’erreurs de copier-coller)
+
+Bonne chance 💼💸
