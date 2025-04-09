@@ -3,7 +3,7 @@ import streamlit as st
 # 🔐 Données utilisateurs simulées
 users = {
     "keus": "crypto2025",
-    "loic": "bitcoin"
+    "stevan": "bitcoin"
 }
 
 def authentifier_utilisateur():
